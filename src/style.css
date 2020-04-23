@@ -1,0 +1,91 @@
+* {
+    margin: auto;
+}
+body {
+    background-color:#CDEBEF;
+}
+.title {
+    font-family: 'Kalam', cursive;
+    font-size: 45px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.formButton {
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: none;
+    background-color: #A4BCBF;
+    color: white;
+    border: 1px solid #A4BCBF;
+}
+.addTab {
+    position: fixed;
+    top: 7vh;
+    left: 40vw;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #546062;
+    display:none;
+    z-index: 10;
+}
+.addTab.active {
+    display:flex;
+}
+.addTabTitle {
+    font-weight: normal;
+    font-family: 'Kalam', cursive;
+    font-size:30px;
+    color: #D7EFF2;
+    display:flex;
+    justify-content: center;
+    
+    
+}
+.styleHelper {
+    margin-top:15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#tabName {
+    font-size:14px;
+    border-radius: 25px;
+    padding:10px;
+    outline: none;
+    border:1px solid white;
+    width:90%;
+}
+#addTabButton {
+    font-size:15px;
+    margin-top: 15px;
+    height:35px;
+    width:52%;
+    border-radius: 35px;
+    background-color: white;
+    border: 1px solid white;
+}
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    pointer-events:none ;
+    background-color:rgb(0,0,0,.7);
+}
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
