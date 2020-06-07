@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="/src/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <script src = "bundle.js"></script>
+    
+</head>
+<body>
+    <h1 class = 'title'>Kanban Board</h1>
+    <button id='showForm' class = 'formButton'> + </button>
+    <div id = 'addTab' class = 'addTab'>
+        <h3 class = 'addTabTitle'>Add new tab</h3>
+        <div class = 'styleHelper'>
+        <input type = 'text' placeholder = 'Tab name' id = 'tabName' class = 'formInput'>
+        <input type = 'submit' id = 'addTabButton' value = 'Add' class = 'formBtn'>
+        </div>
+    </div>
+    <div id = 'addIdea' class = 'addTab'>
+        <h3 class = 'addTabTitle'>Add new idea</h3>
+        <div class = 'styleHelper'>
+        <input type = 'text' placeholder = 'Idea name' id = 'ideaName' class = 'formInput'>
+        <input type = 'submit' id = 'addIdeaButton' value = 'Add' class = 'formBtn'>
+        </div>
+    </div>
+
+    <div id = 'Kanban'>
+        
+    </div>
+    <div id = 'overlay'></div>
+    
+    
+</body>
+</html>
