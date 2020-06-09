@@ -56,7 +56,7 @@ export class KanbanBoard {
         this.tabArray = JSON.parse(localStorage.getItem('tabs'))
     }
     addToLocalStorageAndReload() {
-        localStorage.setItem('tabs' , JSON.stringify(this.tabArray))
+        this.addToLocalStorage();
         location.reload();
     }
    
